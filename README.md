@@ -18,14 +18,12 @@ var body: some View {
             progress: $progress, 
             onComplete: selectNextItem
         )
-        VStack {
-            Text(item.title)
-            ForEach(CarouselItem.allCases) { item in
-                CarouselItemRow(
-                    description: item.description,
-                    progress: progress(for: item)
-                )
-            }
+        Text(item.title)
+        ForEach(CarouselItem.allCases) { item in
+            CarouselItemRow(
+                description: item.description,
+                progress: progress(for: item)
+            )
         }
     }
 }
