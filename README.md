@@ -31,3 +31,5 @@ var body: some View {
 }
 ``` 
 
+![Screenshot](Simulator.gif)
+
