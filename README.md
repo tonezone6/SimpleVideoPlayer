@@ -20,11 +20,12 @@ var body: some View {
         )
         Text(item.title)
         ForEach(CarouselItem.allCases) { item in
-            CarouselItemRow(
+            CarouselRow(
                 description: item.description,
                 progress: progress(for: item)
             )
         }
+        // ...
     }
 }
 ``` 
